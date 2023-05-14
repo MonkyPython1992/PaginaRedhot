@@ -8,6 +8,7 @@ body {
 	background-image: url('https://www.nacionrock.com/wp-content/uploads/2e08645cca9a260b1e8b11f8066e72aaa5da452b.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #fff;
 	height: 100vh;

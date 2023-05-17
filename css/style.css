@@ -49,13 +49,19 @@ header {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 4.5rem;
 	font-weight: bold;
+	color: transparent;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
 	margin-bottom: 20px;
-	text-shadow: 2px 2px #000;
-}
-
-nav {
+	background-image: url('https://c4.wallpaperflare.com/wallpaper/787/1000/988/red-hot-chili-peppers-helmet-rock-bands-antenna-wallpaper-preview.jpg');
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  
 	text-align: center;
 	margin-bottom: 40px;
 }

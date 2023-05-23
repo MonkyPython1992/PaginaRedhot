@@ -187,3 +187,8 @@ h4 {
 	margin-bottom: 20px;
 	color: white;
 }
+
+li:hover
+{	font-style: italic;
+	font-size: x-large;
+}

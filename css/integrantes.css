@@ -40,3 +40,9 @@
   color: #fffdfd;
   margin-bottom: 0; /* Ajusta el margen inferior del rol en la banda */
 }
+
+.integrante img:hover
+{
+width: 200px;
+height: 200px;
+}

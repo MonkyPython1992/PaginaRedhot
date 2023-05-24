@@ -1,51 +1,62 @@
-
-  
-  #history {
-    background-color: #b40404; /* Red Hot Chili Peppers color */
-    color: #fff; /* White text color */
-    padding: 20px;
-  }
-  
-  #history h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  #history p {
-    font-size: 18px;
-    line-height: 1.5;
-    opacity: 0;
-    animation: fade-in 1s ease-in-out forwards;
-  }
-  
-  /* Animation */
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  #history {
-    background-color: #b40404; /* Red Hot Chili Peppers color */
-    color: #fff; /* White text color */
-    padding: 20px;
-  }
-  
-  #history h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  
-  #history p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .hidden {
-    display: none;
-  }
+.tabs {
+  background: rgb(165, 54, 72);
+   min-height: 100vh;
+   box-sizing: border-box;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+   Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   line-height: 1.5;
+   max-width: 60rem;
+   margin: 0 auto;
+   font-size: 110%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+ }
+ 
+ .tabs label {
+   order: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 2rem;
+   margin-right: 0.2rem;
+   cursor: pointer;
+   background-color: pink;
+   font-weight: bold;
+   transition: background ease 0.3s;
+ }
+ .tabs .tab {
+   order: 9;
+   flex-grow: 1;
+   width: 100%;
+   height: 100%;
+   display: none;
+   padding: 1rem;
+   background: #fff;
+   padding: 20px;
+   box-shadow: -10px 10px 0px 0px black;
+ }
+ .tabs .tab p {
+   color: black;
+ }
+ .tabs input[type="radio"] {
+   display: none;
+ }
+ .tabs input[type="radio"]:checked + label {
+   background: rgb(17, 16, 16);
+ }
+ .tabs input[type="radio"]:checked + label + .tab {
+   display: block;
+ }
+ @media (max-width: 465px) {
+   .tabs .tab,
+   .tabs label {
+     order: initial;
+   }
+   .tabs label {
+     width: 100%;
+     margin-left: 50px;
+   }
+ }
